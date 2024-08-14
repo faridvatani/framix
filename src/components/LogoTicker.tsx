@@ -17,7 +17,7 @@ const images = [
 
 export const LogoTicker = () => {
   return (
-    <div className="bg-black text-white py-[72px] sm:py-24">
+    <section className="bg-black text-white py-[72px] sm:py-24">
       <div className="container">
         <h2 className="text-xl text-center text-white/70">
           Trusted by the world&apos;s most innovative teams
@@ -35,6 +35,6 @@ export const LogoTicker = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export const Hero = () => {
   return (
-    <div className="relative bg-black text-white py-[72px] sm:py-24 bg-[linear-gradient(to_bottom,#000,#200D42_34%,#4F21A1_65%,#A46EDB_82%)] overflow-clip">
+    <section className="relative bg-black text-white py-[72px] sm:py-24 bg-[linear-gradient(to_bottom,#000,#200D42_34%,#4F21A1_65%,#A46EDB_82%)] overflow-clip">
       <div className="absolute h-[375px] w-[750px] sm:w-[1536px] sm:h-[768px] lg:w-[2400px] lg:h-[1200px] rounded-[100%] bg-black left-1/2 -translate-x-1/2 border border-[#B48CDE] bg-[radial-gradient(closest-side,#000_82%,#9560EB)] top-[calc(100%-96px)] sm:top-[calc(100%-120px)]"></div>
       <div className="container relative">
         <div className="flex items-center justify-center">
@@ -60,6 +60,6 @@ export const Hero = () => {
           </button>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
