@@ -16,9 +16,20 @@ export const Hero = () => {
             href="#"
             className="inline-flex gap-3 border border-white/30 py-1 px-2 rounded-lg"
           >
-            <span className="bg-[linear-gradient(to_right,#F87AFF,#FB93D0_25%,#FFDD99_50%,#C3F0B2_75%,#2FD8FE)] text-transparent bg-clip-text [-webkit-background-clip:text]">
+            <motion.span
+              className="bg-[linear-gradient(to_right,#F87AFF,#FB93D0_25%,#FFDD99_50%,#C3F0B2_75%,#2FD8FE,#F87AFF,#FB93D0_25%,#FFDD99_50%,#C3F0B2_75%,#2FD8FE)] [background-size:200%] text-transparent bg-clip-text [-webkit-background-clip:text]"
+              animate={{
+                backgroundPositionX: "-100%",
+              }}
+              transition={{
+                duration: 1,
+                repeat: Infinity,
+                repeatType: "loop",
+                ease: "linear",
+              }}
+            >
               Version 2.0 is here
-            </span>
+            </motion.span>
             <span className="inline-flex items-center gap-1">
               <span>Read More</span>
               <ArrowIcon />
