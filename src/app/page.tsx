@@ -1,3 +1,4 @@
+import { CallToAction } from "@/components/CallToAction";
 import { FAQs } from "@/components/FAQs";
 import { Features } from "@/components/Features";
 import { Header } from "@/components/Header";
@@ -14,6 +15,7 @@ export default function Home() {
       <Features />
       <ProductShowcase />
       <FAQs />
+      <CallToAction />
     </main>
   );
 }
