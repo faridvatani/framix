@@ -43,7 +43,7 @@ export const Hero = () => {
               <br /> at a Time
             </h1>
             <motion.div
-              className="absolute right-[476px] top-[108px] hidden sm:inline"
+              className="absolute right-[476px] top-[108px] hidden sm:inline cursor-grabbing"
               drag
               dragSnapToOrigin
             >
@@ -57,7 +57,7 @@ export const Hero = () => {
               />
             </motion.div>
             <motion.div
-              className="absolute left-[498px] top-[56px] hidden sm:inline"
+              className="absolute left-[498px] top-[56px] hidden sm:inline cursor-grabbing"
               drag
               dragSnapToOrigin
             >

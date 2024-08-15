@@ -1,5 +1,5 @@
-import { Banner } from "./Banner";
-import { Navbar } from "./Navbar";
+import { Banner } from "@/sections/Banner";
+import { Navbar } from "@/sections/Navbar";
 
 export const Header = () => {
   return (

@@ -1,7 +1,8 @@
+import Link from "next/link";
 import Image from "next/image";
+import { navItems } from "@/data/data";
 import logo from "@/assets/images/logo.png";
 import MenuIcon from "@/assets/icons/menu.svg";
-import Link from "next/link";
 
 export const Navbar = () => {
   return (
@@ -16,36 +17,15 @@ export const Navbar = () => {
             <MenuIcon className="text-white cursor-pointer" />
           </div>
           <nav className="hidden sm:flex gap-6 items-center">
-            <Link
-              href="#"
-              className="text-opacity-60 text-white hover:text-opacity-100 transition"
-            >
-              About
-            </Link>
-            <Link
-              href="#"
-              className="text-opacity-60 text-white hover:text-opacity-100 transition"
-            >
-              Features
-            </Link>
-            <Link
-              href="#"
-              className="text-opacity-60 text-white hover:text-opacity-100 transition"
-            >
-              Updates
-            </Link>
-            <Link
-              href="#"
-              className="text-opacity-60 text-white hover:text-opacity-100 transition"
-            >
-              Help
-            </Link>
-            <Link
-              href="#"
-              className="text-opacity-60 text-white hover:text-opacity-100 transition"
-            >
-              Customers
-            </Link>
+            {navItems.map((link, index) => (
+              <Link
+                key={index}
+                href={link.href}
+                className="text-opacity-60 text-white hover:text-opacity-100 transition"
+              >
+                {link.title}
+              </Link>
+            ))}
             <button type="button" className="bg-white py-2 px-4 rounded-lg">
               Get for free
             </button>

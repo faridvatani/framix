@@ -1,18 +1,17 @@
 "use client";
-import { useEffect, useRef } from "react";
-import EcosystemIcon from "@/assets/icons/ecosystem.svg";
+import { FC, useEffect, useRef } from "react";
 import { motion, useMotionTemplate, useMotionValue } from "framer-motion";
+import EcosystemIcon from "@/assets/icons/ecosystem.svg";
 
-export const Feature = ({
-  title,
-  description,
-}: {
+interface FeatureCardProps {
   title: string;
   description: string;
-}) => {
+}
+
+export const FeatureCard: FC<FeatureCardProps> = ({ title, description }) => {
   const offsetX = useMotionValue(-100);
   const offsetY = useMotionValue(-100);
-  const maskImage = useMotionTemplate`radial-gradient(100px 100px at ${offsetX}px ${offsetY}px, black, transparent)`;
+  const maskImage = useMotionTemplate`radial-gradient(300px 300px at ${offsetX}px ${offsetY}px, black, transparent)`;
   const border = useRef<HTMLDivElement>(null);
   useEffect(() => {
     const updateMousePosition = (e: MouseEvent) => {
@@ -28,7 +27,7 @@ export const Feature = ({
     return () => window.removeEventListener("mousemove", updateMousePosition);
   }, []);
   return (
-    <div className="relative border border-white/30 px-5 py-10 text-center rounded-xl sm:flex-1">
+    <div className="relative border border-white/30 px-5 py-10 text-center rounded-xl sm:flex-1 cursor-crosshair">
       <motion.div
         ref={border}
         className="absolute inset-0 border-2 border-purple-400 rounded-xl"

@@ -1,9 +1,9 @@
 "use client";
-import HelicImage from "@/assets/images/helix2.png";
-import EmojiStarImage from "@/assets/images/emojistar.png";
+import { useRef } from "react";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { useRef } from "react";
+import EmojiStarImage from "@/assets/images/emojistar.png";
+import HelicImage from "@/assets/images/helix2.png";
 
 export const CallToAction = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -49,7 +49,7 @@ export const CallToAction = () => {
         <h2 className="text-center font-bold text-5xl sm:text-6xl tracking-tighter">
           Get instant access
         </h2>
-        <p className="text-center mt-5 text-xl text-white/70">
+        <p className="text-xl text-center text-white/70 mt-5">
           Celebrate the joy of accomplishment with an app designed to track your
           progress and motivate your efforts.
         </p>

@@ -1,3 +1,26 @@
+export const navItems = [
+  {
+    title: "About",
+    href: "#",
+  },
+  {
+    title: "Features",
+    href: "#",
+  },
+  {
+    title: "Updates",
+    href: "#",
+  },
+  {
+    title: "Help",
+    href: "#",
+  },
+  {
+    title: "Customers",
+    href: "#",
+  },
+];
+
 export const FAQItems = [
   {
     question: "What payment methods do you accept?",
